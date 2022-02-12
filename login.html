@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>E5A</title>
+		<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+		<link rel="icon" href="icon.jpg"</link>
+		<link rel="stylesheet" href="login.CSS" type="text/css">
+		<script type="text/javascript" src="login.JS"></script>
+	</head>
+	<body id="loginpage">
+		<header id="welcomeheader">
+			<img src="logo.png" alt="logo" id="logoimg">
+			<span>Welcome!</span>
+			<input type="button" value="Log In" id="LogIn"> 
+			<input type="button" value="Register" id="Register" onclick="location.href='register.html' "> 
+		</header>
+		<form id="loginform" onsubmit="loginfun(event);">
+			<h1>Log In</h1>
+			<label for"logine-mail">E-mail/Username</label><br>
+			<input type="text" id="logine-mail" placeholder="Enter your E-mail or username" required>
+			<div id="wrongemail" style="margin-bottom:15px;">
+				Wrong e-mail/username!
+			</div>
+			<label for"loginpassword">Password</label><br>
+			<input type="password" id="loginpassword" placeholder="Enter your password" required>
+			<div id="showpass"><input type="checkbox" style="cursor:pointer" onclick="showpass();">Show password </div>
+			<div id="wrongpass">
+				Wrong password!
+			</div>
+			<input type="submit" value="Login" id="loginbutton">
+		</form>
+	</body>
+</html>

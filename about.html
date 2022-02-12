@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> About us </title>
+	<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+	<link rel = "icon" href ="icon.jpg"</link>
+
+    <link rel="stylesheet" type="text/css" href="aboutusstyle.css">
+
+  </head>
+  <body>
+  <header id="navbar">
+			<img src="logo.png" alt="logo" id="logoimg">
+			
+			<ul  >
+				<li class="ulli"><a href="home.html"> Home </a></li>
+				<li class="ulli"><a href="accessories.html"> Accessories </a></li>
+				<li class="ulli"><a href="laptops.html"> Laptops </a></li>
+				<li class="ulli"><a href="mobile.html"> Mobiles </a></li>
+				<li class="ulli"><a href="TVs.html"> TVs </a></li>
+				<li class="ulli"><a class="active"> About us </a></li>
+				<li class="ulli" id="admin" style="display:none;"><a href="admin.html"> Admin page </a></li>
+				<li class="ulli"><a href="login.html"> Log Out </a></li>
+			</ul>
+		</header>
+		<script>
+			var admin=JSON.parse(localStorage.getItem("admin"));
+			if(admin){
+				document.getElementById("admin").style.display="block";
+				var list = document.getElementsByClassName("ulli");
+				for (i = 0; i < list.length; i++) {
+					list[i].style.width="154.75px";
+                }
+			}
+	    </script>
+		<h1>  About us </h1>
+		<p><h2> An online shopping website which offers four categories:</h2>
+		<ul class= "categories">
+                <li>Accessories</li>
+                <li>Laptops</li>
+                <li>Mobiles</li>
+                <li>TVs</li>
+            </ul></p> 
+			<p> When a customer decides to buy a product, they have fill a form which asks for their name,<br> phone number, and address.<br>
+		        Then, a message appears telling them when they'll recieve their order <br> and how much they'll pay for the delivery service.<br>
+				<h2>This website is done by:</h2>
+				<ul  class="categories">
+                <li>Alaa Amr</li>
+                <li>Alaa Adel</li>
+                <li>Alaa Mostafa</li>
+                <li>Asmaa Ashraf</li>
+                <li>Eslam Esam</li>
+                <li>Asem Fathi</li>
+            </ul>    	
+			</p>
+			<p class ="final"> First summer training 2020 <br> FCIS ASU
+			</p>
+		
+		
+		</body>
+		</html>

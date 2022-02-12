@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Laptops</title>
+	<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+	<link rel = "icon" href ="icon.jpg"</link>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head>
+  <body>
+  <header id="navbar">
+			<img src="logo.png" alt="logo" id="logoimg">
+			<ul>
+				<li class="ulli"><a href="home.html"> Home </a></li>
+				<li class="ulli"><a href="accessories.html"> Accessories </a></li>
+				<li class="ulli"><a class="active"> Laptops </a></li>
+				<li class="ulli"><a href="mobile.html"> Mobiles </a></li>
+				<li class="ulli"><a href="TVs.html"> TVs </a></li>
+				<li class="ulli"><a href="about.html"> About us </a></li>
+				<li class="ulli" id="admin" style="display:none;"><a href="admin.html"> Admin page </a></li>
+				<li class="ulli"><a href="login.html"> Log Out </a></li>
+			</ul>
+		</header>
+		<script>
+			var admin=JSON.parse(localStorage.getItem("admin"));
+			if(admin){
+				document.getElementById("admin").style.display="block";
+				var list = document.getElementsByClassName("ulli");
+				for (i = 0; i < list.length; i++) {
+					list[i].style.width="154.75px";
+                }
+			}
+	    </script>
+    <table width="90%"  cellspacing="15" cellpadding="50">
+    <tr>
+         <td>
+          <img src="Apple laptop.png" alt="Apple MacBook Pro Mid 2020 MWP52 Model" width="220" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Apple MacBook Pro Mid 2020 MWP52 Model</b></summary>
+            <p>
+                
+              Computer CPU Manufacturer : Apple
+External Product ID : 190199238268
+Hard Disk Interface : SSD
+Processor Speed (GHz) : 2.0 Up To 3.8 GHZ
+Model Number : MWP52
+Hardware Platform : Mac OS
+Processor Type : AMD Ryzen 5 4500U
+USB : USB C
+Brand : Apple
+Laptop Family : Laptop
+Video Controller Manufacturer : Intel
+Graphics Card Capacity : Shared - Built in
+Memory Card Reader : No
+Keyboard Languages : English
+Touch screen : No
+Hard Disk Interface : Solid State
+Usage : Multi
+Memory Technology : LPDDR4
+Screen Size Range : 13 - 13.9 Inch
+Display Size (Inch) : 13.3 Inch
+External Product ID Type : UPC-A
+Optical Drive Type : Without Optical Drive
+Number of Processor Core : Quad Core
+RAM Type : LPDDR4X
+RAM Size : 16 GB
+Operating System Type : Mac OS
+Processor Family : Intel Core i5
+                
+            </p>
+          </details>
+        </td>
+        <td class = "price" >Price : 39,799.00 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="Acer.png" alt="acer-predator-helios-300-gaming-laptop - Black" width="220"/>
+        </td>
+        <td>
+          <details>
+            <summary><b>Acer-predator-helios-300-gaming-laptop - Black</b></summary>
+            <p>    
+                Brand : Acer
+Hardware Platform : Windows
+Color : Black 
+Operating System Type : Windows 10
+Hard Disk Capacity : 512 GB
+Screen Size Range : 15 - 15.9 Inch
+Processor Type : Core i7 (9th Generation)
+USB : USB 3.1
+Hard Disk Interface : SSD
+Display Size (Inch) : 15.6 Inch
+Memory Card Reader : No
+RAM Size : 16 GB
+Processor Family : Intel 9th Generation Core i7
+Number of Processor Core : Hexa Core
+Video Controller Manufacturer : NVIDIA
+Memory Technology : DDR4
+Processor Speed (GHz) : 2.6 Up To 4.5
+Laptop Family : Laptop
+Computer CPU Manufacturer : Acer
+Usage : Gaming
+Optical Drive Type : Without Optical Drive
+Touch screen : No
+Model Number : Ph315-52-710b
+Keyboard Languages : English
+Graphics Card Capacity : 6 GB
+Are batteries needed to power the product or is this product a battery : Yes
+Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : No
+External Product ID Type : UPC-A
+RAM Type : ddr4_sdram
+Hard Disk Interface : Solid State
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 24,499.00 EGP </th>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+      
+	  <tr>
+         <td>
+          <img src="Dell.png" alt="Dell G5 15-5590 Gaming Laptop" width="220" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Dell G5 15-5590 Gaming Laptop</b></summary>
+            <p>
+                
+Brand : Dell
+Hardware Platform : Linux
+Color : Black
+Operating System Type : Ubuntu
+Hard Disk Capacity : 1.256 TB
+Screen Size Range : 15 - 15.9 Inch
+Processor Type : intel 9th Gen core i7-9750H
+USB : USB 3.1
+Hard Disk Interface : SSA & SSD
+Display Size (Inch) : 15.6 Inch
+Memory Card Reader : No
+RAM Size : 16 GB
+Processor Family : Intel 9th Generation Core i7
+Number of Processor Core : Hexa Core
+Video Controller Manufacturer : NVIDIA
+Memory Technology : DDR4
+Processor Speed (GHz) : 2.6 GHz
+Laptop Family : Laptop
+Computer CPU Manufacturer : intel
+Usage : Gaming
+Optical Drive Type : Without Optical Drive
+Touch screen : No
+Model Number : Gaming G5 15-5590
+Keyboard Languages : English & Arabic
+Graphics Card Capacity : 4 GB
+Are batteries needed to power the product or is this product a battery : No
+Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : No
+External Product ID Type : EAN-13
+RAM Type : ddr4_sdram
+Hard Disk Interface : SSA & SSD                
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 18,939.96 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+      <tr>
+         <td>
+          <img src="Hp.png" alt="HP 15-da2225ne Laptop" width="220" />
+        </td>
+        <td>
+          <details>
+            <summary><b>HP 15-da2225ne Laptop</b></summary>
+            <p>
+                
+Brand : HP
+Hardware Platform : DOS
+Color : Silver
+Operating System Type : Free Dos
+Hard Disk Capacity : 1 TB
+Screen Size Range : 15 - 15.9 Inch
+Processor Type : Intel 10th Gen core i7-10510U
+USB : USB 2.0 & 3.1
+Hard Disk Interface : Serial ATA
+Display Size (Inch) : 15.6 Inch
+Memory Card Reader : Yes
+RAM Size : 8 GB
+Processor Family : Intel Core i7
+Number of Processor Core : Quad Core
+Video Controller Manufacturer : NVIDIA
+Memory Technology : DDR4
+Processor Speed (GHz) : 1.8 GHz
+Laptop Family : Laptop
+Computer CPU Manufacturer : intel
+Usage : Multi
+Optical Drive Type : Super Multi DVD reader & Writer
+Touch screen : No
+Model Number : 15-da2225ne
+Keyboard Languages : English & Arabic
+Graphics Card Capacity : 4 GB
+Are batteries needed to power the product or is this product a battery : No
+Is this a Dangerous Good or a Hazardous Material, Substance or Waste that is regulated for transportation, storage, and/or disposal? : No
+External Product ID Type : UPC-A
+RAM Type : ddr4_sdram
+Hard Disk Interface : Serial ATA
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price :  11,898.18 EGP  </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+      <tr>
+         <td>
+          <img src="Lenovo.png" alt="Lenovo V15-ADA 82C7007YED Laptop" width="220" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Lenovo V15-ADA 82C7007YED Laptop</b></summary>
+            <p>
+                
+Brand: Lenovo
+Model Number: 82C7007YED
+Color: Iron Gray
+Weight: 1.85 kg
+Dimensions: 362.2 x 251.5 x 19.9 (WxDxH)
+Performance:
+Operating System: DOS
+Processor number: 3020e
+Processor Details: 1.2 Gigahertz, up to 2.6 Gigahertz, 2 Cores, 1MB L2 / 4MB L3 Cache
+Chipset: AMD Soc
+Memory (RAM): 4 GB
+RAM Type: DDR4
+Storage: Hard drive: 1 TB
+Graphics: Integrated AMD Radeon Graphics
+Display: 15.6 inches (16:9) LED-backlit HD (1366x768) Anti-Glare Panel
+Keyboard: 6-rows, Multimedia function keys, Numeric keypad
+Camera: 0.3 MP
+Battery: 45 Wh Li-Polymer Battery
+Power: 65 W
+Audio:
+HD Audio
+Dolby Audio
+Stereo speakers
+Monaural microphone
+Headphone/microphone combo jack
+Networking:
+Wi-Fi: 802.11 ac 1x1 Wi-fi
+Bluetooth: Version 4.1
+Ports:
+2 x USB 3.1 Gen 1
+1 x USB 2.0
+HDMI 1.4
+AC power adapter jack
+Combo audio jack
+4-in-1 reader
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 3,869.50 EGP  </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

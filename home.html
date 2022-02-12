@@ -1,0 +1,142 @@
+<html>
+	<head>
+		<title> Home </title>
+		<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+		<link href="home.css" rel="stylesheet">
+		<link rel = "icon" href ="icon.jpg"</link>
+	</head>
+	<body>
+ 
+<!-- Navigation bar--> 
+		<header id="navbar">
+			<img src="logo.png" alt="logo" id="logoimg">
+			<ul  >
+				<li><a class="active"> Home </a></li>
+				<li class="ulli"><a href="accessories.html"> Accessories </a></li>
+				<li class="ulli"><a href="laptops.html"> Laptops </a></li>
+				<li class="ulli"><a href="mobile.html"> Mobiles </a></li>
+				<li class="ulli"><a href="TVs.html"> TVs </a></li>
+				<li class="ulli"><a href="about.html"> About us </a></li>
+				<li class="ulli" id="admin" style="display:none;"><a href="admin.html"> Admin page </a></li>
+				<li class="ulli"><a href="login.html"> Log Out </a></li>
+			</ul>
+		</header>
+		<script>
+			var admin=JSON.parse(localStorage.getItem("admin"));
+			if(admin){
+				document.getElementById("admin").style.display="block";
+				var list = document.getElementsByClassName("ulli");
+				for (i = 0; i < list.length; i++) {
+					list[i].style.width="154px";
+                }
+			}
+	    </script>
+		<!--side bar-->
+		<aside class="sidebar">
+		  <div class="sidebardiv">
+			<br>
+			<h1>
+			  Delivery zones: 
+			</h1>
+			<ul>
+			  <li> First settlement </li>
+			  <li>Third settlement</li>
+			  <li> Fifth settlement </li>
+			  <li> Nasr city </li>
+			  <li> El-zaytoon </li>
+			  <li> 6th of october </li>
+			  <li>El-zmalik</li>
+			  <li>Maadi</li>
+			  <li>El-mohandseen</li>
+			  <li>Masr el-gedida</li>
+			  <li>El-rehab city </li>
+			  <li>Madinaty</li>
+			</ul>
+			<h1>
+			  Delivery days:<br> <span>(from 9:00 AM to 6:00 PM)</span> 
+			</h1>
+			<ul>
+			  <li>Sunday</li>
+			  <li>Monday</li>
+			  <li>Thursday </li>
+			  <li> wednesday </li>
+			  <li> saturday </li>
+			</ul>
+		  </div>
+		  </aside>
+		  <div class="slider">
+			<div class="myslides">
+				<div class="number"> 1/8 </div>
+				<img src="Headset.png" style="width:100%; height:100%;">
+			</div>
+			<div class="myslides">
+				<div class="number"> 2/8 </div>
+				<img src="Laptop Coolers.png" style="width:100%; height:100%;">
+			</div>
+			<div class="myslides">
+				<div class="number"> 3/8 </div>
+				<img src="Lenovos.png" style="width:100%; height:100%">
+			</div>
+			<div class="myslides">
+				<div class="number"> 4/8 </div>
+				<img src="Acers.png" style="width:100%; height:100%">
+			</div>
+			<div class="myslides">
+				<div class="number"> 5/8 </div>
+				<img src="apples.png" style="width:80%; height:100%; margin-left:46px;">
+			</div>
+			<div class="myslides">
+				<div class="number"> 6/8 </div>
+				<img src="huaweis.png" style="width:100%; height:100%">
+			</div>
+			<div class="myslides">
+				<div class="number"> 7/8 </div>
+				<img src="LGs.png" style="width:100%; height:90%; margin-top:53px;">
+			</div>
+			<div class="myslides">
+				<div class="number"> 8/8 </div>
+				<img src="Unionaire.png" style="width:100%; height:100%; ">
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			<br>
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span>
+			  <span class="dot" onclick="currentSlide(2)"></span>
+			  <span class="dot" onclick="currentSlide(3)"></span>
+			  <span class="dot" onclick="currentSlide(4)"></span>
+			  <span class="dot" onclick="currentSlide(5)"></span>
+			  <span class="dot" onclick="currentSlide(6)"></span>
+			  <span class="dot" onclick="currentSlide(7)"></span>
+			  <span class="dot" onclick="currentSlide(8)"></span>
+			</div>
+		  </div>
+		  <script>
+				var index = 1;
+				show(index);
+				function plusSlides(n) {
+				  show(index += n);
+				}
+				function currentSlide(n) {
+				  show(index = n);
+				}
+				function show(n) {
+				  var slides = document.getElementsByClassName("myslides");
+				  var dots = document.getElementsByClassName("dot");
+				  if (n > slides.length) {index = 1}
+				  if (n < 1) {index = slides.length}
+				  for (var i = 0; i < slides.length; i++) {
+					  slides[i].style.display = "none";
+				  }
+				  for (var i = 0; i < dots.length; i++) {
+					  dots[i].className = dots[i].className.replace(" activedot", "");
+				  }
+				  slides[index-1].style.display = "block";
+				  dots[index-1].className += " activedot";
+				}
+		  </script>
+	</body>
+</html>

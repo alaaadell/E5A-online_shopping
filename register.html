@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>E5A</title>
+		<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+		<link rel="icon" href="icon.jpg"</link>
+		<link rel="stylesheet" href="register.CSS" type="text/css">
+		<script type="text/javascript" src="register.JS"></script>
+	</head>
+	<body id="registerpage">
+		<header id="welcomeheader">
+			<img src="logo.png" alt="logo" id="logoimg">
+			<span>Welcome!</span>
+			<input type="button" value="Log In" id="LogIn" onclick="location.href='login.html' "> 
+			<input type="button" value="Register" id="Register" onclick="location.href='#' "> 
+		</header>
+		<form id="registrationform" onsubmit="validate(event);">
+			<h1>Register</h1>
+			<label for="username"> Username </label>
+			<input type="text" id="username" placeholder="Enter your name" required>
+			<div id="usernameexist" style="margin-bottom:15px;">
+				This username already exists!
+			</div>
+			<div id="invalidusername">
+				<p>A valid username is an alphanumeric string that may include _ and – having a length of 3 to 16 characters.</p>
+			</div>
+			<label for="registratione-mail"> E-mail </label>
+			<input type="text" id="registratione-mail" placeholder="Enter your E-mail" required>
+			<div id="emailexist" style="margin-bottom:15px;">
+				This email already exists!
+			</div>
+			<div id="invalidemail" style="margin-bottom:15px;">
+				Invalid E-mail!
+			</div>
+			<label for="registrationpassword"> Password </label>
+			<input type="password" id="registrationpassword" placeholder="Enter your password" required> 
+			<div id="showpass"><input type="checkbox" style="cursor:pointer" onclick="showpass('registrationpassword');">Show password </div>
+			<div id="invalidpassword">
+				<ul>
+					<li>A valid password must have at least 8 characters.</li>
+					<li>Must contain at least 1 uppercase letter, 1 lowercase letter, and 1 number.</li>
+					<li>Can contain special characters.</li>
+				<ul>
+			</div>
+			<label for="passwordconfirmation"> Enter your password again </label>
+			<input type="password" id="passwordconfirmation" placeholder="Confirm your password" required>
+			<div id="showpass"><input type="checkbox" style="cursor:pointer" onclick="showpass('passwordconfirmation');">Show password </div>
+			<div id="wrongconfirmation">
+				Password confirmation doesn't match!
+			</div>
+			<input type="submit" value="register" id="registrationbutton">
+		</form>
+	</body>
+</html>

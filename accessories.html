@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Accessories</title>
+	<meta  charset="utf-8" name="summer training project" content="An online shopping
+		website which allows the user to view available products and choose the product 
+		they want to buy, enter their address, then they'll be told when they'll receive
+		the product and how much they'll pay.">
+	<link rel = "icon" href ="icon.jpg" </link>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  <header id="navbar">
+  	<img src="logo.png" alt="logo" id="logoimg">
+			<ul>
+				<li class="ulli"><a href="home.html"> Home </a></li>
+				<li class="ulli"><a class="active"> Accessories </a></li>
+				<li class="ulli"><a href="laptops.html"> Laptops </a></li>
+				<li class="ulli"><a href="mobile.html"> Mobiles </a></li>
+				<li class="ulli"><a href="TVs.html"> TVs </a></li>
+				<li class="ulli"><a href="about.html"> About us </a></li>
+				<li class="ulli" id="admin" style="display:none;"><a href="admin.html"> Admin page </a></li>
+				<li class="ulli"><a href="login.html"> Log Out </a></li>
+			</ul>
+		</header>
+		<script>
+			var admin=JSON.parse(localStorage.getItem("admin"));
+			if(admin){
+				document.getElementById("admin").style.display="block";
+				var list = document.getElementsByClassName("ulli");
+				for (i = 0; i < list.length; i++) {
+					list[i].style.width="154.75px";
+                }
+			}
+	    </script>
+    <table width="90%"  cellspacing="15" cellpadding="50">
+      <tr>
+        <td>
+          <img src="Keyboard.png" alt="Keyboard" width="220" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Logitech G213 Prodigy RGB Gaming Keyboard - Black</b></summary>
+            <p>    
+                The Logitech G213 Prodigy RGB Gaming Keyboard takes your gaming experience to the next level with its fantastic tactile response.
+				The specialized design gives maximum performance while you are playing your favorite games. All the more, this RGB keyboard boasts a lightning-fast,
+				responsive feedback. Plus, the anti-ghosting matrix makes for seamless gaming experience offering you flawless control even when you press multiple keys.
+				The dedicated media controls let you play, skip, pause, and adjust the volume with just a simple press of the button.   
+            </p>
+          </details>
+        </td>
+        <td class = "price" >Price : 999.00 EGP</td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+      <tr>
+         <td>
+          <img src="mouse.png" alt="mouse" width="130" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Logitech G305 LIGHTSPEED Wireless Gaming Mouse</b></summary>
+            <p>
+                
+               Lightspeed wireless for all: G305 is a Lightspeed wireless gaming mouse designed for serious performance with latest technology innovations at an affordable price point.
+			   It’s next-generation wireless gaming, now ready for any and every gamer.
+               Hero sensor: Hero is a revolutionary new optical sensor designed by Logitech G to deliver class-leading performance and up to 10 times the power efficiency (compared to previous gen).
+			   Hero sensor delivers exceptionally accurate and consistent performance with zero smoothing, filtering or acceleration from 200 to 12,000 DPI. G305 can save up to 5 profiles with up to 5 DPI levels each on the onboard memory.
+               The magic quadrant: Hero is a true breakthrough innovation in sensor technology providing revolutionary performance and efficiency.
+			   It’s the first of its kind to enable a new generation of high-performance and long-lasting wireless gaming mice.
+               G305 Lightspeed Wireless Gaming Mouse10X efficiency: Hero utilizes a smart power management system to continuously adjust frame-rate processing based on mouse speeds.
+			   This allows exacting performance plus constantly managed and minimized power consumption. That equates to run-to-die battery life of 250 hours Battery life may vary based on user,
+			   battery discharge characteristics and computing conditions on just one AA battery.
+                
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 700.00 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+	  <tr>
+         <td>
+          <img src="mousep.png" alt="mouse pad" width="170" />
+        </td>
+        <td>
+          <details>
+            <summary><b>HyperX FURY S - Pro Gaming Cloth Surface Mouse Pad, 450x400x4mm - HX-MPFS-L</b></summary>
+            <p>
+                HyperX FURY s Pro gaming mouse Pad has seamlessly stitched anti-fray edges and provides a uniform surface for a controlled glide.
+				The densely woven Fabric pad's surface feels smooth but is finely textured for precision Optical mouse tracking.
+				HyperX FURY s features a soft Cloth surface for wrist comfort with a textured natural rubber underside designed to hold fast under duress.
+                
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 350.00 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+	  <tr>
+         <td>
+          <img src="Headset.png" alt="headset" width="170" />
+        </td>
+        <td>
+          <details>
+            <summary><b>HyperX FURY S - Pro Gaming Cloth Surface Mouse Pad, 450x400x4mm - HX-MPFS-L</b></summary>
+            <p>
+                Logitech G332 gaming headset lets you hear more of the game with big 50mm drivers that deliver a complete sound experience for all your favorite games.
+				Its slim and lightweight, with rotating sports-performance ear cups, a large 6mm flip-to-mute mic, and convenient multi-platform compatibility.
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 1,199 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+	  <tr>
+         <td>
+          <img src="Laptop Cooler.png" alt="laptop cooler" width="170" />
+        </td>
+        <td>
+          <details>
+            <summary><b>Generic Laptop Cooler 5 LED Fans Cooling Notebook Pad Silent Dual USB Speed Control Base Cooler</b></summary>
+            <p>
+                Made from premium material, it is reliable and durable for long time.With mesh metal panel, help to accelerated heat dissipation.
+                With 5 fans, low noise and the speed can be adjusted.Dual USB port support power,dual speed control.
+                5 levels angles adjust holder for comfortable viewing.Ergonomics design with anti-slip pad for stable placement on desk.
+                Suitable for 12-17 inch laptop notebook. <br>
+				Specifications: <br>
+				Product Size:455*312*32.5mm,Fan size:100*100*15mm,Product weight:1062g,Fan speed:240+-15%,Maximum air volume:74.35CFM,Rated voltage:5VDC,Rated current:0.38 A.
+				
+            </p>
+          </details>
+        </td>
+        <td class = "price "> Price : 2,100 EGP </td>
+        <td>
+            <button type ="button" class="button" onclick="location.href='form.html'">BUY NOW</button>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
